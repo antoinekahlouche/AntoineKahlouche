@@ -1,184 +1,53 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Présentation professionnelle de Antoine Kahlouche.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Antoine Kahlouche</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Antoine Kahlouche</title>
+	<meta name="description" content="Find me on the internet !!">
 
-    <link rel="icon" type="image/png" href="./ressources/favicon.png" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-amber.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="./ressources/wordcloud2.js"></script>
+	<link rel="icon" type="image/png" href="./profile.png" />
 
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/materialdesignicons.min.css">
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+	<link rel="stylesheet" href="./style.css">
 
-        ga('create', 'UA-100087623-3', 'auto');
-        ga('send', 'pageview');
-    </script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-100087623-3', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
 
-    <div class="section center">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-                <h1>Antoine<br>Kahlouche</h1>
+	<img src="profile.png" class="profile" />
+	<h1>Antoine Kahlouche</h1>
+	<h2>Find me on the internet !!</h2>
+	<button class="raceforfun" onclick="window.open('https://racefor.fun/landing')"><img class="fab" src="logo.svg" />Racefor.fun</button><br><br>
 
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="section">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-                <h2>Présentation</h2>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="section">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-                <h2>Expérience</h2>
-
-            </div>
-            <div class="mdl-cell mdl-cell--12-col">
-                <h3>Antoine Kahlouche SASU</h3>
-                <h5>Mars 2017 à aujourd'hui - Président</h5>
-            </div>
-            <div class="mdl-cell mdl-cell--12-col">
-                <h3>Capgemini</h3>
-                <h5>Septembre 2011 à février 2017 - Ingénieur Java/J2ee</h5>
-
-            </div>
-            <div class="mdl-cell mdl-cell--12-col">
-                <h3>CNAM</h3>
-                <h5>Septembre 2011 à septembre 2014 - Diplômé : Ingénieur informatique, Système d'information</h5>
-
-            </div>
-            <div class="mdl-cell mdl-cell--12-col">
-                <h3>IUT Informatique</h3>
-                <h5>Septembre 2009 à septembre 2011 - Diplômé : DUT informatique</h5>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="section">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-                <h2>Compétences</h2>
-                <canvas id="canvas"></canvas>
-            </div>
-        </div>
-    </div>
-
-
-
-    <script>
-        (function() {
-            var canvas = document.getElementById('canvas'),
-                context = canvas.getContext('2d');
-
-            window.addEventListener('resize', resizeCanvas, false);
-
-            function resizeCanvas() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-
-                drawStuff();
-            }
-            resizeCanvas();
-
-            function drawStuff() {
-
-                // https://github.com/timdream/wordcloud2.js
-                var list = [
-                    ['Web Technologies', '26'],
-                    ['HTML', '20'],
-                    ['<canvas>', '20'],
-                    ['CSS', '15'],
-                    ['JavaScript', '15'],
-                    ['Document Object Model', '12'],
-                    ['<audio>', '12'],
-                    ['<video>', '12'],
-                    ['Web Workers', '12'],
-                    ['XMLHttpRequest', '12'],
-                    ['SVG', '12'],
-                    ['JSON.parse()', '9'],
-                    ['Geolocation', '9'],
-                    ['data attribute', '9'],
-                    ['transform', '9'],
-                    ['transition', '9'],
-                    ['animation', '9'],
-                    ['setTimeout', '7'],
-                    ['@font-face', '7'],
-                    ['Typed Arrays', '7'],
-                    ['FileReader API', '7'],
-                    ['FormData', '7'],
-                    ['IndexedDB', '7'],
-                    ['getUserMedia()', '7'],
-                    ['postMassage()', '7'],
-                    ['CORS', '7'],
-                    ['strict mode', '6'],
-                    ['calc()', '6'],
-                    ['supports()', '6'],
-                    ['media queries', '6'],
-                    ['full screen', '6'],
-                    ['notification', '6'],
-                    ['orientation', '6'],
-                    ['requestAnimationFrame', '6'],
-                    ['border-radius', '5'],
-                    ['box-sizing', '5'],
-                    ['rgba()', '5'],
-                    ['text-shadow', '5'],
-                    ['box-shadow', '5'],
-                    ['flexbox', '5'],
-                    ['viewpoint', '5']
-                ];
-                WordCloud(document.getElementById('canvas'), {
-                    list: list,
-
-
-                    gridSize: 18,
-                    fontFamily: 'Roboto',
-                    color: '#000',
-                    minFontSize: 15,
-                    weightFactor: 2,
-                    backgroundColor: 'transparent',
-                    minRotation: 0,
-                    maxRotation: 0,
-                    shuffle: true,
-                    drawOutOfBound: true,
-                    shape: 'pentagon'
-                });
-
-            }
-        })();
-    </script>
+	<button class="facebook" onclick="window.open('https://facebook.com/antoine-kahlouche-348076985789946')"><i class="fab fa-facebook"></i>Facebook</button><br>
+	<button class="instagram" onclick="window.open('https://instagram.com/antoinekahlouche')"><i class="fab fa-instagram"></i>Instagram</button><br>
+	<button class="linkedin" onclick="window.open('https://linkedin.com/in/antoinekahlouche')"><i class="fab fa-linkedin"></i>Linkedin</button><br>
+	<!-- <button class="medium" onclick="window.open('https://medium.com/@antoinekahlouche')"><i class="fab fa-medium"></i>Medium</button><br> -->
+	<!-- <button class="patreon" onclick="window.open('https://patreon.com/antoinekahlouche')"><i class="fab fa-patreon"></i>Patreon</button><br> -->
+	<!-- <button class="soundcloud" onclick="window.open('https://soundcloud.com/antoinekahlouche')"><i class="fab fa-soundcloud"></i>Soundcloud</button><br> -->
+	<button class="strava" onclick="window.open('https://strava.com/athletes/antoinekahlouche')"><i class="fab fa-strava"></i>Strava</button><br>
+	<button class="twitter" onclick="window.open('https://twitter.com/antoinekahlouch')"><i class="fab fa-twitter"></i>Twitter</button><br>
+	<button class="youtube" onclick="window.open('https://youtube.com/user/antoinekahlouche')"><i class="fab fa-youtube"></i>Youtube</button>
 
 </body>
 
