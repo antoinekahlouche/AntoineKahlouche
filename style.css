@@ -8,9 +8,23 @@ body {
     margin-bottom: 2rem;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15rem;
+    background: #C62828;
+}
+
 .profile {
+    position: relative;
     width: 20rem;
     height: auto;
+    border-radius: 50%;
+    border: 5px solid #FAFAFA;
+    z-index: 1;
+    background: #FAFAFA;
 }
 
 h1 {
@@ -73,7 +87,7 @@ button:focus {
 }
 
 .instagram {
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .linkedin {
