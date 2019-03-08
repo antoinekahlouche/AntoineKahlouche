@@ -62,7 +62,8 @@ button:focus {
     box-shadow: none;
 }
 
-.fab {
+.fab,
+.fas {
     margin-left: 2rem;
     margin-right: 3rem;
     width: 1rem;
@@ -80,6 +81,10 @@ button:focus {
 
 .raceforfun .fab {
     margin-left: 3rem;
+}
+
+.email {
+    background: #424242;
 }
 
 .facebook {
