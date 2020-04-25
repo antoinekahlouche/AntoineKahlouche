@@ -75,10 +75,7 @@ button:focus {
     width: 20rem;
     height: 5rem;
     font-size: 1.5rem;
-}
-
-.raceforfun .fab {
-    margin-left: 3rem;
+    text-align: center;
 }
 
 .email {
