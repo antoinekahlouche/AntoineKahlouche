@@ -1,6 +1,6 @@
 ## Salut, moi c'est Antoine
 
-- 👨‍💻 En ce moment je dev [r4ce.co](https://r4ce.co) !
+- 💻 En ce moment je dev [r4ce.co](https://r4ce.co) !
 - 🎯 Objectif : live coding sur Twitch
 - 🔗 Retrouve tous mes liens sur [antoine.kahlouche.fr](https://antoine.kahlouche.fr) !
 
