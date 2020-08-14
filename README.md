@@ -1,15 +1,9 @@
-## Hi there, I'm Antoine
+## Salut, moi c'est Antoine
 
-- 🔭 I’m currently working on [r4ce.co](https://r4ce.co)!
-- 🌱 I’m currently learning everything 🤣
-
-## Connect with me:
-
-[<img align="left" alt="Personal website" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://antoine.kahlouche.fr)
-[<img align="left" alt="Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />](https://instagram.com/antoinekahlouche)
-[<img align="left" alt="LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/antoinekahlouche)
-[<img align="left" alt="Strava" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/strava.svg" />](https://strava.com/athletes/antoinekahlouche)
+- 👨‍💻 En ce moment je dev [r4ce.co](https://r4ce.co)!
+- 🎯 Objectif : live coding sur Twitch
+- 🔗 Retrouve tous mes liens sur [antoine.kahlouche.fr](https://antoine.kahlouche.fr)!
 
 <br /><br />
 
-<img align="left" alt="AntoineKahlouche's Github Stats" src="https://github-readme-stats.vercel.app/api?username=AntoineKahlouche&show_icons=true&hide_border=true" />
+<img align="left" alt="AntoineKahlouche's Github Stats" src="https://github-readme-stats.vercel.app/api?username=AntoineKahlouche&show_icons=true&hide_border=true&count_private=true&theme=graywhite" />
