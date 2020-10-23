@@ -1,18 +1,46 @@
 html,
 body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	font-family: "Roboto", sans-serif;
-	text-align: center;
 	color: #424242;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	height: 100%;
+}
+
+.container {
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	min-height: 100%;
+}
+
+.section {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@media (max-width: 1080px) {
+	.container {
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+	.section {
+		width: 100%;
+	}
 }
 
 .avatar {
-	max-width: 500px;
+	max-width: 95%;
+	margin-bottom: 3rem;
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 button {
@@ -30,7 +58,7 @@ button {
 	height: 3rem;
 	margin: 0.5rem;
 	outline: none;
-	border-radius: 2px;
+	border-radius: 5px;
 	color: #fafafa;
 	vertical-align: middle;
 	font-weight: bold;
@@ -38,12 +66,16 @@ button {
 
 button:hover,
 button:focus {
-	filter: brightness(85%);
+	filter: brightness(120%);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:focus {
 	box-shadow: none;
+}
+
+a {
+	margin-bottom: 1rem;
 }
 
 .fab,
