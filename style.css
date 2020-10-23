@@ -24,7 +24,7 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 	.container {
 		flex-direction: column;
 		margin-bottom: 3rem;
@@ -35,7 +35,8 @@ body {
 }
 
 .avatar {
-	max-width: 95%;
+	width: 95%;
+	max-width: 600px;
 	margin-bottom: 3rem;
 }
 
