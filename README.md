@@ -1,7 +1,6 @@
 ## Salut, moi c'est Antoine
 
-- 💻 En ce moment je dev [r4ce.co](https://r4ce.co) !
-- 🎯 Objectif : live coding sur Twitch
+- 💻 En ce moment je recherche une mission freelance VueJS
 - 🔗 Retrouve tous mes liens sur [antoine.kahlouche.fr](https://antoine.kahlouche.fr) !
 
 <img align="left" alt="AntoineKahlouche's Github Stats" src="https://github-readme-stats.vercel.app/api?username=AntoineKahlouche&show_icons=true&hide_border=true&count_private=true&theme=graywhite" />
