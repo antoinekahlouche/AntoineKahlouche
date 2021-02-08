@@ -119,7 +119,12 @@ a {
 	transition: var(--transition);
 	line-height: 3rem;
 }
-#experience #tags span:hover,
+@media (min-width: 901px) {
+	#experience #tags span:hover {
+		color: rgba(0, 0, 0, 0.95);
+		background: var(--white);
+	}
+}
 #experience #tags span.selected {
 	color: rgba(0, 0, 0, 0.95);
 	background: var(--white);
