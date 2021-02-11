@@ -18,7 +18,7 @@ const experiences = [
 		infos: {
 			company: "Antoine Kahlouche SASU",
 			location: "Courbevoie",
-			dates: "2 ans 11 mois (févr. 2018 – déc. 2020)"
+			dates: "2 ans 4 mois (sept. 2018 – déc. 2020)"
 		},
 		details: ["R4CE est une application qui aide les athlètes à trouver leur prochaine course.", "- Développement frontend et backend (VueJs, ExpressJs, MongoDB, Redis, Nginx, Node, AWS, Docker, GitHub Actions)", "- Manipulation de tuiles vectorielles (cartographie)"],
 		tags: ["AWS", "Communication", "Docker", "Git", "GitHubActions", "HTML/CSS", "JavaScript", "MongoDB", "Nginx", "NodeJS", "Redis", "UX/UI", "VueJS"]
