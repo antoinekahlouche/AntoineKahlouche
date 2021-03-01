@@ -20,7 +20,7 @@ function templateExperience(experience) {
 	}
 
 	return `
-		<div class="bloc ${experience.tags.join(" ")}">
+		<div class="bloc ${experience.tags.join(" ")} ">
 			<div class="firstLine">
 				<h2>${experience.project ? experience.project + " - " : ""}${experience.title}</h2>
 				${link}
@@ -38,7 +38,7 @@ function templateExperience(experience) {
 function filterExperiences() {
 	$("#list .bloc").each(function () {
 		const className = $(this)[0].className
-		if ([...selectedClasses].every(v => className.includes(v))) {
+		if ([...selectedClasses].every(v => className.includes(v + " "))) {
 			$(this).removeClass("hidden")
 		} else {
 			$(this).addClass("hidden")
