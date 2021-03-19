@@ -65,8 +65,8 @@ a {
 }
 #hero h3 {
 	margin-top: 0.5rem;
-	color: #77c41f;
-	/* color: #c41f1f; */
+	color: #c41f1f;
+	/* color: #77c41f; */
 }
 #hero h3 svg {
 	position: relative;
