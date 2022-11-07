@@ -7,5 +7,6 @@ export default defineConfig({
         host: true,
         port: 3000
     },
-    integrations: [svelte(), tailwind()]
+    integrations: [svelte(), tailwind()],
+    site: 'https://antoine.kahlouche.fr'
 })
