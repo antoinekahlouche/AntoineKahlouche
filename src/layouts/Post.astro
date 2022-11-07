@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Card from '@/components/Card.astro'
+
+const { frontmatter, headings } = Astro.props
+---
+
+<Layout>
+    <div class='dynamic-pt'></div>
+    <Card class='aspect-video' img={frontmatter.img} />
+    <div class='dynamic-pt'></div>
+    <h1>{frontmatter.title}</h1>
+    {
+        headings.length>0 ?
+        (<h2>Sommaire</h2>
+    <ul class='list-disc'>
+        {
+            headings.map((h: any) => (
+                <li style={'margin-left:' + h.depth * 20 + 'px;'}>
+                    <a href={'#' + h.slug}>{h.text}</a>
+                </li>
+            ))
+        }
+    </ul>):null
+    }
+    
+    <slot />
+</Layout>

@@ -1,0 +1,20 @@
+---
+interface Props {
+    class?: string
+    img?: string
+    noPadding?: boolean
+}
+
+const { class: className, noPadding = false, img } = Astro.props
+const bgImgUrl = `url('${img}')`
+---
+
+<div class:list={['rounded-2xl drop-shadow-xl duration-100 bg-bg-secondary', noPadding ? null : 'dynamic-p', img ? 'bg-image bg-cover bg-origin-border' : null, className]}>
+    <slot />
+</div>
+
+<style define:vars={{ bgImgUrl }}>
+    .bg-image {
+        background-image: var(--bgImgUrl);
+    }
+</style>

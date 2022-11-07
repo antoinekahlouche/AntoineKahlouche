@@ -1,0 +1,19 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { navs } from '@/components/Header.astro'
+---
+
+<Layout>
+    <h1>Menu</h1>
+    <div class='dynamic-pt'>
+        {
+            navs.map((nav) => (
+                <h2 class='text-center'>
+                    <a class='dynamic-px' href={nav.href}>
+                        {nav.name}
+                    </a>
+                </h2>
+            ))
+        }
+    </div>
+</Layout>

@@ -1,0 +1,49 @@
+---
+import { Icon } from 'astro-icon'
+
+export const navs = [
+    { name: 'Projets', href: '/projects' },
+    { name: 'Liens', href: '/links' },
+    { name: 'A propos', href: '/about' }
+]
+// live
+// newsletter
+// shop : support, course
+// faq
+---
+
+<header class='dynamic-py'>
+    <nav class='flex justify-between sm:justify-start'>
+        <a class='dynamic-pr' href='/'>
+            <Icon name='ak' class='text-text-primary h-10' />
+        </a>
+        <div class='mt-5 hidden sm:block'>
+            {
+                navs.map((nav) => (
+                    <a class='dynamic-px' href={nav.href}>
+                        {nav.name}
+                    </a>
+                ))
+            }
+        </div>
+        <div class='self-end sm:hidden'>
+            <a id='menu-icon'>
+                <Icon name='bars-solid' class='text-text-primary h-6 m-2' />
+            </a>
+        </div>
+    </nav>
+</header>
+
+<script>
+    document.getElementById('menu-icon')?.addEventListener(
+        'click',
+        function () {
+            if (window.location.pathname === '/menu') {
+                history.back()
+            } else {
+                window.location.href = '/menu'
+            }
+        },
+        false
+    )
+</script>

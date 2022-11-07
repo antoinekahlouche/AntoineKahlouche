@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply m-auto overflow-x-hidden;
+        @apply flex flex-col;
+        @apply font-sans;
+        @apply bg-bg-primary text-text-primary;
+        @apply dynamic-px;
+    }
+    h1 {
+        @apply text-center font-black;
+        @apply text-4xl xl:text-5xl 2xl:text-6xl;
+        @apply dynamic-py;
+    }
+    h2 {
+        @apply font-black;
+        @apply text-2xl xl:text-3xl 2xl:text-4xl;
+        @apply dynamic-py;
+    }
+    h3 {
+        @apply font-black;
+        @apply text-lg xl:text-xl 2xl:text-2xl;
+        @apply dynamic-py;
+    }
+    a {
+        @apply cursor-pointer text-accent;
+    }
+    .gap {
+        @apply gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-9 2xl:gap-10;
+    }
+    .dynamic-pl {
+        @apply pl-5 sm:pl-6 md:pl-7 lg:pl-8 xl:pl-9 2xl:pl-10;
+    }
+    .dynamic-pt {
+        @apply pt-5 sm:pt-6 md:pt-7 lg:pt-8 xl:pt-9 2xl:pt-10;
+    }
+    .dynamic-pr {
+        @apply pr-5 sm:pr-6 md:pr-7 lg:pr-8 xl:pr-9 2xl:pr-10;
+    }
+    .dynamic-pb {
+        @apply pb-5 sm:pb-6 md:pb-7 lg:pb-8 xl:pb-9 2xl:pb-10;
+    }
+    .dynamic-px {
+        @apply dynamic-pl dynamic-pr;
+    }
+    .dynamic-py {
+        @apply dynamic-pt dynamic-pb;
+    }
+    .dynamic-p {
+        @apply dynamic-px dynamic-py;
+    }
+    .svg-as-char {
+        @apply h-4;
+        display: inline-flex;
+        align-self: center;
+    }
+    .svg-as-char svg {
+        height: 1em;
+        width: 1em;
+    }
+    .svg-as-char.svg-baseline svg {
+        top: 0.125em;
+        position: relative;
+    }
+}

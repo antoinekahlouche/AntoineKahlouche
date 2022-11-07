@@ -1,0 +1,46 @@
+.twitch {
+    background: #5a3e85 !important;
+}
+.youtube {
+    background: #ff0000 !important;
+}
+.twitter {
+    background: #1da1f2 !important;
+}
+.instagram {
+    background: #d6249f !important;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    ) !important;
+}
+.facebook {
+    background: #4267b2 !important;
+}
+.tiktok {
+    background: #010101 !important;
+    background: radial-gradient(circle at 50% 50%, #010101 00%, #01010100 80%),
+        linear-gradient(135deg, #69c9d0 0%, #010101 50%, #ee1d52 100%) !important;
+}
+.linkedin {
+    background: #00689f !important;
+}
+.github {
+    background: #000000 !important;
+}
+.pinterest {
+    background: #e60023 !important;
+}
+.medium {
+    background: #00ab6c !important;
+}
+.discord {
+    background: #5865f2 !important;
+}
+.strava {
+    background: #fc4c02 !important;
+}
