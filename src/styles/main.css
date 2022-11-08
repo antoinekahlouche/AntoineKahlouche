@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-    body {
+    body,
+    #menu {
         @apply m-auto overflow-x-hidden;
         @apply flex flex-col;
         @apply font-sans;

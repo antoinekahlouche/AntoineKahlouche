@@ -27,22 +27,51 @@ export const navs = [
             }
         </div>
         <div class='self-end sm:hidden'>
-            <a id='menu-icon'>
+            <a id='open-menu-icon'>
                 <Icon name='bars-solid' class='text-text-primary h-6 m-2' />
             </a>
         </div>
     </nav>
 </header>
 
+
+<div id="menu" class="z-10 absolute top-0 right-0 bottom-0 left-0" style="visibility:hidden;">
+    <header class='dynamic-py'>
+        <nav class='flex justify-end'>
+            <a id='close-menu-icon'>
+                <Icon name='xmark-solid' class='text-text-primary h-6 m-2' />
+            </a>
+        </nav>
+    </header>
+    <h1>Menu</h1>
+    <div class='dynamic-pt'>
+        {
+            navs.map((nav) => (
+                <h2 class='text-center'>
+                    <a class='dynamic-px' href={nav.href}>
+                        {nav.name}
+                    </a>
+                </h2>
+            ))
+        }
+    </div>
+</div>
+
 <script>
-    document.getElementById('menu-icon')?.addEventListener(
+    const menu  = document.getElementById('menu')
+    document.getElementById('open-menu-icon')?.addEventListener(
         'click',
         function () {
-            if (window.location.pathname === '/menu') {
-                history.back()
-            } else {
-                window.location.href = '/menu'
-            }
+            if(!menu) return
+            menu.style.visibility = "visible";
+        },
+        false
+    )
+    document.getElementById('close-menu-icon')?.addEventListener(
+        'click',
+        function () {
+            if(!menu) return
+            menu.style.visibility = "hidden";
         },
         false
     )
