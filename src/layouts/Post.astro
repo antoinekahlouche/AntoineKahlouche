@@ -10,9 +10,7 @@ const { frontmatter, headings } = Astro.props
     <Card class='aspect-video' img={frontmatter.img} />
     <div class='dynamic-pt'></div>
     <h1>{frontmatter.title}</h1>
-    {
-        headings.length>0 ?
-        (<h2>Sommaire</h2>
+    <h2>Sommaire</h2>
     <ul class='list-disc'>
         {
             headings.map((h: any) => (
@@ -21,8 +19,6 @@ const { frontmatter, headings } = Astro.props
                 </li>
             ))
         }
-    </ul>):null
-    }
-    
+    </ul>
     <slot />
 </Layout>

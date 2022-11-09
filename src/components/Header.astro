@@ -6,10 +6,6 @@ export const navs = [
     { name: 'Liens', href: '/links' },
     { name: 'A propos', href: '/about' }
 ]
-// live
-// newsletter
-// shop : support, course
-// faq
 ---
 
 <header class='dynamic-py'>
@@ -34,8 +30,7 @@ export const navs = [
     </nav>
 </header>
 
-
-<div id="menu" class="z-10 absolute top-0 right-0 bottom-0 left-0" style="visibility:hidden;">
+<div id='menu' class='z-10 absolute top-0 right-0 bottom-0 left-0' style='visibility:hidden;'>
     <header class='dynamic-py'>
         <nav class='flex justify-end'>
             <a id='close-menu-icon'>
@@ -58,20 +53,20 @@ export const navs = [
 </div>
 
 <script>
-    const menu  = document.getElementById('menu')
+    const menu = document.getElementById('menu')
     document.getElementById('open-menu-icon')?.addEventListener(
         'click',
         function () {
-            if(!menu) return
-            menu.style.visibility = "visible";
+            if (!menu) return
+            menu.style.visibility = 'visible'
         },
         false
     )
     document.getElementById('close-menu-icon')?.addEventListener(
         'click',
         function () {
-            if(!menu) return
-            menu.style.visibility = "hidden";
+            if (!menu) return
+            menu.style.visibility = 'hidden'
         },
         false
     )

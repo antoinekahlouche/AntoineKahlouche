@@ -5,7 +5,7 @@ interface Props {
     noPadding?: boolean
 }
 
-const { class: className, noPadding = false, img } = Astro.props
+const { class: className, noPadding = false, img } = Astro.props as Props
 const bgImgUrl = `url('${img}')`
 ---
 
