@@ -6,15 +6,13 @@ module.exports = {
             sans: 'JetBrains Mono, Arial'
         },
         colors: {
-            accent: '#FFB300',
+            accent: '#FDA92C',
             bg: {
-                primary: '#171C24',
-                secondary: '#252C35'
+                primary: '#161C24',
+                secondary: '#212b36'
             },
             text: {
-                primary: '#FFFFFF',
-                secondary: '#909EAB',
-                tertiary: '#212B36'
+                primary: '#FFFFFF'
             },
             border: '#3C4752',
             green: '#4CAF50',
