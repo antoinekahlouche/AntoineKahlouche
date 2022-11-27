@@ -12,7 +12,8 @@ module.exports = {
                 secondary: '#212b36'
             },
             text: {
-                primary: '#FFFFFF'
+                primary: '#FFFFFF',
+                secondary: '#909EAB'
             },
             border: '#3C4752',
             green: '#4CAF50',

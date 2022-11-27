@@ -15,7 +15,7 @@ const projects = await Astro.glob('./*.md')
                 .map((fm) => (
                     <a href={'/projects/' + fm.ref}>
                         <Card class='relative aspect-[16/9]' img={fm.img}>
-                            <div class:list={[fm.chipBgClass, 'absolute top-3 right-3 text-xs text-text-primary py-1 px-2 rounded-lg']}>{fm.status.toUpperCase()}</div>
+                            <div class:list={[fm.chipBgClass, 'absolute top-3 right-3 text-xs font-black text-text-primary py-1 px-2 drop-shadow rounded-lg']}>{fm.status.toUpperCase()}</div>
                         </Card>
                     </a>
                 ))
