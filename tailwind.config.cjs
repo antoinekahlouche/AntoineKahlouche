@@ -2,8 +2,16 @@
 module.exports = {
     content: ['./src/**/*.{astro,html,json,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
+        screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px'
+            // '2xl': '1536px'
+        },
         fontFamily: {
-            sans: 'JetBrains Mono, Arial'
+            heading: 'JetBrains Mono, Arial',
+            text: 'Inter, Arial'
         },
         colors: {
             accent: '#FDA92C',

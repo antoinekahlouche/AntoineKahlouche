@@ -7,42 +7,46 @@
     #menu {
         @apply m-auto overflow-x-hidden;
         @apply flex flex-col;
-        @apply font-sans;
+        @apply font-text;
         @apply bg-bg-primary text-text-primary;
         @apply dynamic-px;
     }
     h1 {
-        @apply text-center font-black;
-        @apply text-4xl xl:text-5xl 2xl:text-6xl;
+        @apply text-center font-black font-heading;
+        @apply text-4xl xl:text-5xl;
         @apply dynamic-py;
     }
     h2 {
-        @apply font-black;
-        @apply text-2xl xl:text-3xl 2xl:text-4xl;
+        @apply font-black font-heading;
+        @apply text-2xl xl:text-3xl;
         @apply dynamic-py;
     }
     h3 {
-        @apply font-black;
-        @apply text-lg xl:text-xl 2xl:text-2xl;
-        @apply dynamic-py;
+        @apply font-black font-heading;
+        @apply text-lg xl:text-xl;
+        @apply dynamic-pb;
+    }
+    p,
+    ul {
+        @apply dynamic-pb;
     }
     a {
-        @apply cursor-pointer text-accent;
+        @apply cursor-pointer text-accent font-heading;
     }
     .gap {
-        @apply gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-9 2xl:gap-10;
+        @apply gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-9;
     }
     .dynamic-pl {
-        @apply pl-5 sm:pl-6 md:pl-7 lg:pl-8 xl:pl-9 2xl:pl-10;
+        @apply pl-5 sm:pl-6 md:pl-7 lg:pl-8 xl:pl-9;
     }
     .dynamic-pt {
-        @apply pt-5 sm:pt-6 md:pt-7 lg:pt-8 xl:pt-9 2xl:pt-10;
+        @apply pt-5 sm:pt-6 md:pt-7 lg:pt-8 xl:pt-9;
     }
     .dynamic-pr {
-        @apply pr-5 sm:pr-6 md:pr-7 lg:pr-8 xl:pr-9 2xl:pr-10;
+        @apply pr-5 sm:pr-6 md:pr-7 lg:pr-8 xl:pr-9;
     }
     .dynamic-pb {
-        @apply pb-5 sm:pb-6 md:pb-7 lg:pb-8 xl:pb-9 2xl:pb-10;
+        @apply pb-5 sm:pb-6 md:pb-7 lg:pb-8 xl:pb-9;
     }
     .dynamic-px {
         @apply dynamic-pl dynamic-pr;
@@ -65,5 +69,11 @@
     .svg-as-char.svg-baseline svg {
         top: 0.125em;
         position: relative;
+    }
+    strong {
+        @apply font-extrabold;
+    }
+    ul li {
+        @apply ml-10 list-disc;
     }
 }
