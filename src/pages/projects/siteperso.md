@@ -3,7 +3,7 @@ layout: '@/layouts/Post.astro'
 title: 'Site perso'
 ref: 'siteperso'
 img: '/images/siteperso.png'
-status: 'En cours'
+status: 'En pause'
 chipBgClass: 'bg-green'
 order: 4
 ---

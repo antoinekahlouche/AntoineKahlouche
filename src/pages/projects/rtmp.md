@@ -3,7 +3,7 @@ layout: '@/layouts/Post.astro'
 title: 'RTMP'
 ref: 'rtmp'
 img: '/images/rtmp.png'
-status: 'En cours'
+status: 'En pause'
 chipBgClass: 'bg-green'
 order: 5
 ---
