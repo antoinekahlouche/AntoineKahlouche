@@ -9,22 +9,14 @@
 }
 .instagram {
     background: #d6249f !important;
-    background: radial-gradient(
-        circle at 30% 107%,
-        #fdf497 0%,
-        #fdf497 5%,
-        #fd5949 45%,
-        #d6249f 60%,
-        #285aeb 90%
-    ) !important;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%) !important;
 }
 .facebook {
     background: #4267b2 !important;
 }
 .tiktok {
     background: #010101 !important;
-    background: radial-gradient(circle at 50% 50%, #010101 00%, #01010100 80%),
-        linear-gradient(135deg, #69c9d0 0%, #010101 50%, #ee1d52 100%) !important;
+    background: radial-gradient(circle at 50% 50%, #010101 00%, #01010100 80%), linear-gradient(135deg, #69c9d0 0%, #010101 50%, #ee1d52 100%) !important;
 }
 .linkedin {
     background: #00689f !important;
@@ -43,4 +35,13 @@
 }
 .strava {
     background: #fc4c02 !important;
+}
+.medium {
+    background: #292929 !important;
+}
+.spotify {
+    background: #1db954 !important;
+}
+.podcast {
+    background: linear-gradient(135deg, rgba(135, 46, 196, 1) 0%, rgba(177, 80, 226, 1) 50%, rgba(213, 109, 251, 1) 100%) !important;
 }
